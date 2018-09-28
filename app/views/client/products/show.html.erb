@@ -1,0 +1,9 @@
+<a href="/client/products">home</a>
+
+<h2><%= @products["name"] %></h2>
+<h3>ID:: <%= @products["id"] %></h3>
+<h5>Description: <%= @products["description"] %></h5>
+<h6>Price: <%= @products["price"] %></h6>
+
+<a href="/client/products/<%= @products["id"] %>/edit">Edit</a>
+<a href="/client/products/<%= @products["id"] %>" data-method="delete">Delete</a>
